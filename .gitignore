@@ -1,0 +1,16 @@
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+*.pyc
+__pycache__
+*.mp4
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
