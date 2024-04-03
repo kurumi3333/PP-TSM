@@ -5,7 +5,7 @@ import random
 import pickle
 import numpy as np
 
-bmn_window = 20
+bmn_window = 10
 dataset = "data/tiny-Kinetics-400"
 feat_dir = dataset + "/features"
 out_dir = dataset + "/input_for_bmn"

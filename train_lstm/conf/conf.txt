@@ -25,12 +25,12 @@ batch_size = 600
 droplast = False
 use_gpu = True
 num_gpus = 2
-filelist = "/home/work/datasets/EuroCup2016/input_for_lstm/train.txt"
+filelist = "../../data/tiny-Kinetics-400/input_for_lstm/train.txt"
 [VALID]
 batch_size = 16
 num_samples = 34487
 droplast = True
-filelist = "/home/work/datasets/EuroCup2016/input_for_lstm/val.txt"
+filelist = "../../data/tiny-Kinetics-400/input_for_lstm/val.txt"
 [INFER]
 batch_size = 1
 droplast = True

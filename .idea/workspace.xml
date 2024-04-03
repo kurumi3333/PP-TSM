@@ -5,31 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="166337e9-d448-4003-8354-8ea217155e91" name="更改" comment="添加文件">
-      <change afterPath="$PROJECT_DIR$/data/script/get_frames_pcm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/script/get_instance_for_bmn.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/script/get_instance_for_tsn.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_loader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extractor/extract_bmn.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extractor/extract_feat.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/predict/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/predict/action_detect/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/predict/action_detect/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/predict/action_detect/models/audio_infer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/predict/action_detect/models/bmn_infer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/predict/action_detect/models/lstm_infer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/predict/action_detect/models/pptsm_infer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/predict/configs/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train_lstm/conf/conf.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train_lstm/scenario_lib/accuracy_metrics.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train_lstm/scenario_lib/action_net.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train_lstm/scenario_lib/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train_lstm/scenario_lib/feature_reader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train_lstm/scenario_lib/train.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train_lstm/scenario_lib/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PP-TSM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PP-TSM.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PaddleVideo/paddlevideo/modeling/heads/pptsm_head.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configs_train/pptsm.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/script/get_frames_pcm.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/script/get_frames_pcm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/script/get_instance_for_bmn.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/script/get_instance_for_bmn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/script/get_instance_for_tsn.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/script/get_instance_for_tsn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tiny-Kinetics-400/label/label.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/tiny-Kinetics-400/label/label.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tiny-Kinetics-400/label/val_256.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/tiny-Kinetics-400/label/val_256.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tiny-Kinetics-400/train_256/url.list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tiny-Kinetics-400/val_256/url.list" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/read_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/read_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_lstm/conf/conf.txt" beforeDir="false" afterPath="$PROJECT_DIR$/train_lstm/conf/conf.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +53,7 @@
     "Python.extract_bmn.executor": "Run",
     "Python.extract_feat.executor": "Run",
     "Python.extract_frames.executor": "Run",
+    "Python.get_frames_pcm.executor": "Run",
     "Python.get_instance_for_bmn.executor": "Run",
     "Python.get_instance_for_tsn.executor": "Run",
     "Python.read_data.executor": "Run",
@@ -73,12 +61,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "F:/程序代码/PP-TSM",
+    "last_opened_file_path": "F:/code",
     "settings.editor.selected.configurable": "terminal"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\code" />
       <recent name="F:\程序代码\PP-TSM\data\script" />
       <recent name="F:\程序代码\PP-TSM\data\tiny-Kinetics-400" />
       <recent name="F:\程序代码\PP-TSM" />

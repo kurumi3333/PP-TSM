@@ -35,6 +35,9 @@ def extract_frames(source_dir, target_dir):
             target_frames = os.path.join(target_video_frames_folder, 'frame_%05d.jpg')
 
             try:
+                if os.path.splitext(each_video)[1] != '.mp4':
+                    a = os.path.splitext(each_video)[0]
+                    subprocess.call('ffmpeg -i %s %s' % (each_video, a + '.mp4'))
                 subprocess.call('ffmpeg -nostats -loglevel 0 -i "%s" -filter:v fps=fps=30 -s 340x256 -q:v 2 "%s"' %
                                 (source_video_name, target_frames), shell=True)
                 video_frames = os.listdir(target_video_frames_folder)
@@ -87,8 +90,8 @@ def run(source_dir, target_dir1, target_dir2):
 
 
 if __name__ == '__main__':
-    # python extract_frames.py --source_dir F:/程序代码/PP-TSM/data/tiny-Kinetics-400/train_256 --frames_dir F:/程序代码/PP-TSM/data/tiny-Kinetics-400/frames/train_256_frames --pcm_dir F:/程序代码/PP-TSM/data/tiny-Kinetics-400/pcm/train_256_pcm
-    # python extract_frames.py --source_dir F:/程序代码/PP-TSM/data/tiny-Kinetics-400/test_256 --frames_dir F:/程序代码/PP-TSM/data/tiny-Kinetics-400/frames/test_256_frames --pcm_dir F:/程序代码/PP-TSM/data/tiny-Kinetics-400/pcm/test_256_pcm
+    # python get_frames_pcm.py --source_dir F:/程序代码/PP-TSM/data/tiny-Kinetics-400/train_256 --frames_dir F:/程序代码/PP-TSM/data/tiny-Kinetics-400/frames/train_256_frames --pcm_dir F:/程序代码/PP-TSM/data/tiny-Kinetics-400/pcm/train_256_pcm
+    # python get_frames_pcm.py --source_dir F:/程序代码/PP-TSM/data/tiny-Kinetics-400/val_256 --frames_dir F:/程序代码/PP-TSM/data/tiny-Kinetics-400/frames/val_256_frames --pcm_dir F:/程序代码/PP-TSM/data/tiny-Kinetics-400/pcm/val_256_pcm
     parser = argparse.ArgumentParser(
         description='Extract frames of Kinetics400 dataset'
     )

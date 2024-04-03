@@ -10,7 +10,7 @@ def read_labels(file_dir):
     # print(subfolder_names)
     result = {}
     for i, subfolder_name in enumerate(subfolder_names):
-        result[i+1] = subfolder_name
+        result[i + 1] = subfolder_name
         result[subfolder_name] = i+1
     with open('data/tiny-Kinetics-400/label/label.json', 'w') as f:
         json.dump(result, f)
