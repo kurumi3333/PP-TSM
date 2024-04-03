@@ -14,3 +14,12 @@ __pycache__
 *.jpeg
 *.gif
 *.svg
+*.pdparams
+*.pth
+*.pt
+*.pth.tar
+*.ckpt
+*.pdiparams
+*.json
+*.log
+__param__
